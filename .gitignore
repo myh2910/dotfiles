@@ -8,11 +8,6 @@ fish/*
 fish/fish_variables
 gm_scripts/*
 gnupg/*
-mutt/abook/addressbook
-mutt/abook/addressbook~
-mutt/mbsyncrc
-mutt/muttrc.?
-mutt/templates/*
 qutebrowser/bookmarks/*
 qutebrowser/qsettings/
 qutebrowser/quickmarks
@@ -24,4 +19,3 @@ vim/spell/*
 !fish/completions/*.fish
 !fish/fish_plugins
 !elinks/elinks.conf
-otis.env

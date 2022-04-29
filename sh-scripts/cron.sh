@@ -1,15 +1,6 @@
 #!/bin/bash
 
 #if [ "$(hostname)" = "ArchDiamond" -a "$(whoami)" = "evan" ]; then
-#	## OTIS: UPDATE BILLING
-#	## this is when we copy the gnucash record and send them to otis web server
-#	## this is done by running `make` in the billing directory
-#	# first, let's update the directory
-#	cd ~/ProGamer/OTIS/
-#	# find the largest year
-#	cd $(ls | ag "[0-9]{4}" | sort -rn | head -n 1)/billing
-#	make
-#
 #	## OLYMPIAD: update the von database
 #	# this means both committing any recent changes
 #	# as well as re-running the index cem
@@ -20,14 +11,7 @@
 #		git push
 #	fi
 #	python -m von index
-#
 #fi
-
-# This command grabs all the OTIS stuff: problem sets, inquiries, suggestions
-# and processes all of them through venueQ
-if [ "$(hostname)" = "ArchMajestic" -a "$(whoami)" = "evan" ]; then
-	python ~/dotfiles/venueQ/otis.py
-fi
 
 # This piece of software is not written by me.
 # It's a program that'll read the next 14 days of my calendar
