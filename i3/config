@@ -266,7 +266,6 @@ mode "exec" {
 	bindsym m exec gnucash &, mode "default"
 	bindsym o exec obs &, mode "default"
 	bindsym p exec python "$HOME/dotfiles/py-scripts/projtext.py" &, mode "default"
-	bindsym q exec qutebrowser &, mode "default"
 	bindsym s exec spotify &, mode "default"
 	bindsym v exec gvim &, mode "default"
 	bindsym y exec dynalist &, mode "default"
