@@ -41,7 +41,6 @@ if ! test -d "$HOME/.config/bugwarrior"; then ln -s $HOME/dotfiles/bugwarrior $H
 if ! test -d "$HOME/.config/dunst"; then ln -s $HOME/dotfiles/dunst $HOME/.config/dunst; fi
 if ! test -d "$HOME/.config/fish"; then ln -s $HOME/dotfiles/fish $HOME/.config/fish; fi
 if ! test -d "$HOME/.config/mirage_linemode"; then ln -s $HOME/dotfiles/mirage_linemode $HOME/.config/mirage_linemode; fi
-if ! test -d "$HOME/.config/mutt"; then ln -s $HOME/dotfiles/mutt $HOME/.config/mutt; fi
 if ! test -d "$HOME/.config/qutebrowser"; then ln -s $HOME/dotfiles/qutebrowser $HOME/.config/qutebrowser; fi
 if ! test -d "$HOME/.config/ranger"; then ln -s $HOME/dotfiles/ranger $HOME/.config/ranger; fi
 if ! test -d "$HOME/.config/rofi"; then ln -s $HOME/dotfiles/rofi $HOME/.config/rofi; fi

@@ -59,10 +59,6 @@ alias von='python3 -m von'
 alias wplatex='python2 ~/dotfiles/py-scripts/latex2wp.py'
 alias wpmd='python3 ~/dotfiles/py-scripts/markdown2wp.py'
 
-alias mu='neomutt'
-alias m1='neomutt -F ~/.config/mutt/neomuttrc.1'
-alias m2='neomutt -F ~/.config/mutt/neomuttrc.2'
-
 alias sudo='sudo ' # allows my aliases to get into sudo in bash
 
 export PYTHONPATH="$PYTHONPATH:$HOME:$HOME/dotfiles/py-scripts"

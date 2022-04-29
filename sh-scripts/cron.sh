@@ -55,13 +55,6 @@ then
 			"twitch.tv" > ~/.cache/agenda.json
 fi
 
-## MBSYNC + MUTT
-# Syncing mailboxes for use with mutt
-if command -v mbsync > /dev/null
-then
-	mbsync -Va
-fi
-
 ## SYNC TASKWARRIOR
 if command -v task > /dev/null
 then

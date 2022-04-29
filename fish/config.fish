@@ -166,8 +166,6 @@ alias pip='pip3'
 alias pudb='pudb3'
 
 # OTIS venue Q
-alias otis='gvim -c ":let g:venue_entry=\'~/dotfiles/venueQ/otis.py\'" -c ":source ~/dotfiles/venueQ/venueQ.vim"'
-
 alias demacro='/usr/bin/python2 ~/dotfiles/py-scripts/demacro.py'
 alias dragon='/usr/bin/python2 ~/Documents/Projects/dragon/'
 alias md='/usr/bin/python3 ~/dotfiles/py-scripts/sane_markdown.py'
@@ -181,10 +179,6 @@ alias wah='/usr/bin/python3 ~/dotfiles/py-scripts/wah.py'
 alias wplatex='/usr/bin/python2 ~/dotfiles/py-scripts/latex2wp.py'
 alias wpmd='/usr/bin/python3 ~/dotfiles/py-scripts/markdown2wp.py'
 alias xfer='/usr/bin/python3 -m xfer'
-
-alias mu='~/dotfiles/mutt/open-mail.sh'
-alias m1='~/dotfiles/mutt/open-mail.sh -F ~/.config/mutt/neomuttrc.1'
-alias m2='~/dotfiles/mutt/open-mail.sh -F ~/.config/mutt/neomuttrc.2'
 
 export PYTHONPATH="$PYTHONPATH:$HOME:$HOME/dotfiles/py-scripts/"
 
