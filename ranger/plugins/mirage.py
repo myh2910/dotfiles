@@ -19,7 +19,7 @@ from mirage_linemode.config import get_config
 from mirage_linemode.theme.core import get_theme
 from mirage_linemode.util import get_config_path, get_theme_path, plugin_name
 
-i18n.activate("zh_TW", path=Path('~/dotfiles/i18n/').expanduser())
+i18n.activate("ko_KR")
 
 # if 'RANGER_PTVSD' in os.environ:
 #	  import ptvsd
@@ -100,7 +100,7 @@ class MarksideLinemode(LinemodeBase):
 		if delta.days < 6 * 30.5:
 			since = str(humanize.naturaldelta(delta, months = True))
 		else:
-			since = f'{int(delta.days / 30.5)}月前'
+			since = f'{int(delta.days / 30.5)}개월'
 		if len(since) > 4:
 			since = ''
 		ret = "%5s %5s" % (since, size)
