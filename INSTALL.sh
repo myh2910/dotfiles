@@ -46,7 +46,6 @@ if ! test -d "$HOME/.config/rofi"; then ln -s $HOME/dotfiles/rofi $HOME/.config/
 if ! test -d "$HOME/.config/yapf"; then ln -s $HOME/dotfiles/yapf $HOME/.config/yapf; fi
 if ! test -d "$HOME/.config/zathura"; then ln -s $HOME/dotfiles/zathura $HOME/.config/zathura; fi
 if ! test -d "$HOME/.config/i3"; then ln -s $HOME/dotfiles/i3 $HOME/.config/i3; fi
-if ! test -d "$HOME/.config/fontconfig"; then ln -s $HOME/dotfiles/fontconfig $HOME/.config/fontconfig; fi
 
 # nested config
 if ! test -f "$HOME/.config/proselint/config"; then
@@ -68,6 +67,10 @@ fi
 if ! test -f "$HOME/.config/gh/config.yml"; then
 	mkdir -p $HOME/.config/gh
 	ln -s $HOME/dotfiles/gh-config.yml $HOME/.config/gh/config.yml
+fi
+if ! test -d "$HOME/.config/fontconfig"; then
+	mkdir -p $HOME/.config/fontconfig
+	ln -s $HOME/dotfiles/fonts.conf $HOME/.config/fontconfig/fonts.conf
 fi
 
 # vim
