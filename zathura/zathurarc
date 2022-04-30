@@ -1,12 +1,32 @@
-set default-bg "#001337"
+set statusbar-bg "rgba(18, 18, 18, .8)"
 set dbus-service true
 set synctex true
 set synctex-editor-command "gvim --servername GVIM --remote +%{line} %{input}"
 
-map , feedkeys ":set first-page-column 1<Return>"
-map . feedkeys ":set first-page-column 2<Return>"
-map e feedkeys ":exec sh -c 'xfce4-terminal --working-directory=$(dirname $FILE)'<Return>"
-map b feedkeys ":exec sh -c 'thunar $(dirname $FILE)'<Return>"
-map z feedkeys ":exec sh -c 'zathura $FILE'<Return>"
-map c feedkeys ":exec xfce4-terminal -e 'sh -c \"latexmk -cd $(echo $FILE | sed s/pdf\$/tex/)\"'<Return>"
-map p feedkeys ":exec xfce4-terminal -e 'sh -c \"latexmk -pvc -cd $(echo $FILE | sed s/pdf\$/tex/)\"'<Return>"
+set guioptions sv
+set window-title-basename true
+set selection-clipboard clipboard
+set zoom-max 2000
+
+# normal mode
+map , set "first-page-column 1"
+map . set "first-page-column 2"
+map e exec "sh -c xfce4-terminal --working-directory=$(dirname $FILE)"
+map b exec "sh -c thunar $(dirname $FILE)"
+map z exec "zathura '$FILE'"
+map c exec "xfce4-terminal -e 'sh -c latexmk -cd $(echo $FILE | sed s/pdf\$/tex/)'"
+map p exec "xfce4-terminal -e 'sh -c latexmk -pvc -cd $(echo $FILE | sed s/pdf\$/tex/)'"
+map v exec "sh -c '~/dotfiles/sh-scripts/zathura.sh \"$FILE\"'"
+map x set "guioptions sv"
+map <C-x> set "guioptions none"
+map X set "guioptions hv"
+
+# fullscreen mode
+map [fullscreen] x set "guioptions sv"
+map [fullscreen] <C-x> set "guioptions none"
+map [fullscreen] X set "guioptions hv"
+
+# presentation mode
+map [presentation] x set "guioptions sv"
+map [presentation] <C-x> set "guioptions none"
+map [presentation] X set "guioptions hv"
