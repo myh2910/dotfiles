@@ -4,4 +4,4 @@ configuration {
 	sorting-method: "fzf";
 }
 @import "/usr/share/rofi/themes/fancy.rasi"
-@theme "/usr/share/rofi/themes/paper-float.rasi"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

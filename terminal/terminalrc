@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Inconsolata Semi-Bold Semi-Condensed 18
+FontName=Inconsolata Semi-Bold 9.5
 MiscAlwaysShowTabs=FALSE
 MiscBell=TRUE
 MiscBellUrgent=TRUE
@@ -26,12 +26,12 @@ MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=TRUE
 MiscNewTabAdjacent=TRUE
 MiscSearchDialogOpacity=100
-MiscShowUnsafePasteDialog=TRUE
+MiscShowUnsafePasteDialog=FALSE
 ColorBackground=#121212121212
 ColorForeground=#e3e3e3e3e3e3
 ColorPalette=rgb(0,0,0);rgb(170,0,0);rgb(0,170,0);rgb(170,85,0);rgb(78,78,241);rgb(170,0,170);rgb(0,170,170);rgb(170,170,170);rgb(85,85,85);rgb(255,85,85);rgb(85,255,85);rgb(255,255,85);rgb(131,142,228);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0.850000
+BackgroundDarkness=0.900000
 CustomCommand=ranger
 CommandLoginShell=TRUE
 ColorCursorForeground=#2626a2a26969
@@ -40,4 +40,5 @@ ColorSelection=#e5e5a5a50a0a
 ColorSelectionBackground=#f9f9f0f06b6b
 ColorBold=#9999c1c1f1f1
 ColorCursorUseDefault=FALSE
-
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
+ScrollingUnlimited=TRUE
