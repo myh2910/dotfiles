@@ -19,7 +19,7 @@ bar {
 	id bottom-bar
 	position bottom
 	font pango:DejaVu Sans Mono 8
-	strip_workspace_numbers yes
+	strip_workspace_numbers no
 	tray_output primary
 	status_command py3status
 
@@ -65,7 +65,7 @@ bar {
 	bindsym $mod+t layout tabbed
 	bindsym $mod+e layout toggle split
 	bindsym $mod+s layout stacking
-	# Default stacking
+	# Default tabbed
 	workspace_layout tabbed
 
 	# toggle tiling / floating
@@ -269,7 +269,7 @@ mode "exec" {
 		"python $HOME/dotfiles/py-scripts/export-ggb-clean-asy.py", mode "default"
 	bindsym b exec libreoffice --calc &, mode "default"
 	bindsym d exec discord &, mode "default"
-	bindsym f exec firefox &, mode "default"
+	bindsym f exec firefox -p &, mode "default"
 	bindsym g exec geogebra &, mode "default"
 	bindsym h exec google-chrome &, mode "default"
 	bindsym i exec ibus-daemon -d -r, mode "default"
