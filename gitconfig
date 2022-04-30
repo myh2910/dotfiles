@@ -2,9 +2,9 @@
 	editor = vim
 	pager = less -x1,3
 [user]
-	name = Evan Chen
-	email = evan@evanchen.cc
-	signingkey = 2911981B5D39118D80D782779474E9565D64C443
+	name = Yohan Min
+	email = minleeyohan@gmail.com
+	signingkey = 1D89E19D1FED9D39C20E4E08047494EFA2B47ED8
 
 [color]
 	branch = auto

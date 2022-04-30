@@ -2,4 +2,4 @@
 Description=Runs a custom cron script
 
 [Service]
-ExecStart=/home/evan/dotfiles/sh-scripts/cron.sh
+ExecStart=/home/myh2910/dotfiles/sh-scripts/cron.sh

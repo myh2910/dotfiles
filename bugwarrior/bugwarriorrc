@@ -4,15 +4,15 @@ annotation_comments = False
 
 [github_issues]
 service = github
-github.username = vEnhance
-github.token = @oracle:eval:secret-tool lookup user vEnhance type github
-github.login = vEnhance
+github.username = myh2910
+github.token = @oracle:eval:secret-tool lookup user myh2910 type github
+github.login = myh2910
 github.query = is:issue assignee:vEnhance is:open
 github.description_template = GH{{githubnumber}} {{githubtitle}}
 github.filter_pull_requests = True
 github.include_user_issues = False
 github.include_user_repos = False
-github.only_if_assigned=vEnhance
+github.only_if_assigned=myh2910
 
 # NOTE TO SELF: install taskw via
 # pip install git+https://github.com/ralphbean/taskw@develop
