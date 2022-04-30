@@ -106,7 +106,7 @@ let g:gitgutter_map_keys = 0
 let g:gutentags_cache_dir = '~/.vim/tags/'
 let g:gutentags_file_list_command = {
 	\ 'markers': {
-			\ '.git': 'sh /home/evan/dotfiles/sh-scripts/guten-targets-git.sh',
+			\ '.git': 'sh /home/myh2910/dotfiles/sh-scripts/guten-targets-git.sh',
 			\ },
 	\ }
 let g:indent_guides_auto_colors = 0
@@ -521,7 +521,8 @@ set shiftwidth=2
 set showbreak=_
 set showcmd    " display incomplete commands
 set smartcase
-set spell
+set spell spelllang=en,es
+set spell spelllang+=cjk
 set splitright
 set t_Co=256
 set tabstop=2
