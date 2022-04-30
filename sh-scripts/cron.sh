@@ -1,42 +1,12 @@
 #!/bin/bash
 
-#if [ "$(hostname)" = "ArchDiamond" -a "$(whoami)" = "evan" ]; then
-#	## OLYMPIAD: update the von database
-#	# this means both committing any recent changes
-#	# as well as re-running the index cem
-#	cd ~/OlyBase
-#	if ! git diff --exit-code; then
-#		git add .
-#		git commit -a -m "Snapshot $(date) on $(hostname)"
-#		git push
-#	fi
-#	python -m von index
-#fi
-
 # This piece of software is not written by me.
 # It's a program that'll read the next 14 days of my calendar
 # and output the results under ~/.cache/agenda.json
 # where it can be consumed by e.g. conky
 if command -v gcalendar > /dev/null
 then
-	gcalendar --no-of-days 14 --output json \
-			--calendar "日曆" \
-			"Break" \
-			"Events" \
-			"Friends" \
-			"Garbage" \
-			"Happy Events" \
-			"Important" \
-			"Leisure" \
-			"Office Hours" \
-			"Prison" \
-			"Real Life" \
-			"Schedule" \
-			"Todoist" \
-			"Unfortunate Things" \
-			"Video Calls for OTIS" \
-			"Zero-Minute Reminders" \
-			"twitch.tv" > ~/.cache/agenda.json
+	gcalendar --no-of-days 14 --output json > ~/.cache/agenda.json
 fi
 
 ## SYNC TASKWARRIOR
