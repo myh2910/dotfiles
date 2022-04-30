@@ -1,0 +1,7 @@
+# Take screenshots
+bindsym --release $mod+shift+s exec import -density 500 ~/assets/$(date +"%Y%m%d-%H%M%S-%2N").png
+bindsym --release Print exec import -window root -density 500 ~/assets/$(date +"%Y%m%d-%H%M%S-%2N").png
+
+# Enable floating
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="toolbox"] floating enable
