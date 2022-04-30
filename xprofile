@@ -1,14 +1,15 @@
 # !/bin/bash
 # vim: ft=sh
 
-# Make sure we're in Dvorak
-setxkbmap dvorak -option caps:escape
+setxkbmap qwerty -option caps:escape
 numlockx on
 
 export LANG="en_US.UTF-8"
 
-# for Chinese input
+# for foreign language input
 export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
 
 # Use rofi as CM launcher
 export CM_LAUNCHER=rofi
@@ -21,75 +22,11 @@ export QT_QPA_PLATFORMTHEME='qt5ct'
 
 source ~/dotfiles/sh-scripts/xrandr.sh
 
-if [ "$HOSTNAME" = ArchAngel ]; then
-	xmodmap -e "pointer = 3 2 1" &> /dev/null  # left-hand mouse
-	xset s 900 30
-	xset dpms 600 600 600
-	# export QT_SCALE_FACTOR=2.4
-fi
-
-if [ "$HOSTNAME" = ArchScythe ]; then
-	xset s 900 30
-	xset dpms 600 600 600
-	xmodmap -e "pointer = 3 2 1" &> /dev/null  # left-hand mouse
-	synclient TapButton1=0           # Disable tap to click
-	synclient VertScrollDelta=-237   # Natural scroll for touchpads
-	# remap mouse buttons
-	synclient RightButtonAreaTop=0
-	# synclient RightButtonAreaLeft=0
-	# synclient RightButtonAreaRight=1560
-	secret-tool lookup type ssh |
-		sshpass -P passphrase keychain ~/.ssh/id_rsa --nogui
-	export $(keychain --query --quiet)
-fi
-
-if [ "$HOSTNAME" = ArchSapphire ]; then
-	xset s 900 30
-	xset dpms 600 600 600
-	xmodmap -e "pointer = 3 2 1" &> /dev/null  # left-hand mouse
-	synclient RightButtonAreaTop=0
-	synclient VertScrollDelta=-237   # Natural scroll for touchpads
-	secret-tool lookup type ssh |
-		sshpass -P passphrase keychain ~/.ssh/id_rsa --nogui
-	export $(keychain --query --quiet)
-	# replace the useless menu key with extra ctrl
-	xmodmap -e "remove Control = Control_R"
-	xmodmap -e "keycode 135 = Control_R Control_R Control_R Control_R"
-	xmodmap -e "add Control = Control_R"
-fi
-
-if [ "$HOSTNAME" = ArchDiamond ]; then
-	if [ $(date +"%Z") = PDT ]; then
-		xset s 900 30
-		xset dpms 600 600 600
-	else
-		xset s 2000 60
-		export QT_AUTO_SCREEN_SCALE_FACTOR=2
-		export GDK_SCALE=2
-	fi
-	xmodmap -e "pointer = 3 2 1" &> /dev/null  # left-hand mouse
-	secret-tool lookup type ssh |
-		sshpass -P passphrase keychain ~/.ssh/id_rsa --nogui
-	export $(keychain --query --quiet)
-fi
-
-if [ "$HOSTNAME" = ArchMajestic ]; then
-	# dunst &
-	ponymix set-default -t source \
-		-d alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback
-	ponymix set-volume -t source 80
-	if [ "$(whoami)" = "evan" ]; then
-		xset s 2000 60
-		xset dpms 600 600 600
-		xmodmap -e "pointer = 3 2 1" &> /dev/null  # left-hand mouse
-		~/dotfiles/sh-scripts/paswitch.sh speakers
-	fi
-	if [ "$(whoami)" = "star" ]; then
-		xset s 2000 60
-		xset dpms 1800 1800 1800
-		xmodmap -e "pointer = 3 2 1" &> /dev/null  # left-hand mouse
-	fi
-	export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+if [ "$HOSTNAME" = myh2910 ]; then
+	xset -dpms
+	xset s off
+	ponymix set-volume 60
+	ponymix set-volume -t source 30
 fi
 
 # Load background image, if not existent already
