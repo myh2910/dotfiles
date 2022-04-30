@@ -1,6 +1,4 @@
-[submodule "i3/i3-workspace-names-daemon"]
-	path = i3/i3-workspace-names-daemon
-	url = https://github.com/cboddy/i3-workspace-names-daemon
-[submodule "i3-workspace-names-daemon"]
+
+[submodule "i3/3kon"]
 	path = i3/3kon
-	url = https://github.com/cboddy/i3-workspace-names-daemon
+	url = https://github.com/myh2910/i3-workspace-names-daemon
