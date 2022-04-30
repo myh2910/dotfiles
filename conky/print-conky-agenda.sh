@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$(whoami)" != "evan" ]; then
+if [ "$(whoami)" != "myh2910" ]; then
 	exit;
 fi
 
@@ -13,7 +13,7 @@ cat ~/.cache/agenda.json | python ~/dotfiles/conky/gcal-json-to-text.py > ~/.cac
 echo "\${color4}$(cat ~/.cache/agenda.txt | tail -n +1 | head -n 1)"
 echo "\${color5}$(cat ~/.cache/agenda.txt | tail -n +2 | head -n 1)"
 echo "\${color6}$(cat ~/.cache/agenda.txt | tail -n +3 | head -n 1)"
-echo "\${voffset -10}\${color0}\${stippled_hr}\${voffset -2}"
+echo "\${voffset -5}\${color0}\${stippled_hr}\${voffset -4}"
 echo "\${color4}$(cat ~/.cache/todo.txt | tail -n +1 | head -n 1)"
 echo "\${color5}$(cat ~/.cache/todo.txt | tail -n +2 | head -n 1)"
 echo "\${color5}$(cat ~/.cache/todo.txt | tail -n +3 | head -n 1)"

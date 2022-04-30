@@ -11,14 +11,14 @@ from typing import Dict, List, Optional
 
 from dateutil.parser import isoparse
 
-NUM_ROWS = 15
+NUM_ROWS = 11
 if len(sys.argv) > 1:
 	NUM_COL = int(sys.argv[-1])
 else:
 	NUM_COL = 2
 
 if NUM_COL == 2:
-	FONT_SIZE = 14
+	FONT_SIZE = 10
 elif NUM_COL == 3:
 	FONT_SIZE = 18
 elif NUM_COL >= 4:
@@ -142,11 +142,11 @@ HEADER_Y_SECOND = NUM_ROWS + 1
 
 
 def offset(x):
-	return 512 * x + 20
+	return 333 * x + 23
 
 
 def offset_indented(x):
-	return 512 * x + 93
+	return 333 * x + 73
 
 
 def goto_offset(x):
@@ -187,7 +187,7 @@ for n, item in enumerate(remaining_tasks[:NUM_ROWS]):
 table[HEADER_Y_FIRST][1] = r'${color ddeeff}' + table[HEADER_Y_FIRST][1]
 table[HEADER_Y_FIRST][2] = r'${color 66aaff}' + table[HEADER_Y_FIRST][2]
 table[HEADER_Y_FIRST][-1] += r'${font Exo 2:size=%d}' % FONT_SIZE
-table[HEADER_Y_SECOND - 1][-1] += '\n' + r'${goto 15}${color bbbbbb}${stippled_hr}'
+table[HEADER_Y_SECOND - 1][-1] += '\n' + r'${goto 20}${color bbbbbb}${stippled_hr}'
 table[HEADER_Y_SECOND][1] = r'${color 66aaff}' + table[HEADER_Y_SECOND][1]
 table[HEADER_Y_SECOND][-1] += r'${font Exo 2:size=%d}' % FONT_SIZE
 

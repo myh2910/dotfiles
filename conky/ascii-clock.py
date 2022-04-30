@@ -19,9 +19,9 @@ data: List[List[Any]] = [
 	[37.5, 35, 32.5, 30, 27.5, 25, 22.5],
 ]
 
-print('${font DejaVu Sans Mono:size=12}')
+print('${font DejaVu Sans Mono:size=10}')
 for row in data:
-	s = '${goto 230}'
+	s = '${goto 252}'
 	for x in row:
 		if x is None:
 			s += ' '
@@ -34,9 +34,9 @@ for row in data:
 				h = int(x)
 			if hour >= h:
 				s += r'${color #FFAAAA}'
-				s += r'${font DejaVu Sans Mono:bold:size=12}'
+				s += r'${font DejaVu Sans Mono:bold:size=10}'
 				s += x
-				s += r'${font DejaVu Sans Mono:size=12}'
+				s += r'${font DejaVu Sans Mono:size=10}'
 			else:
 				s += r'${color #999999}'
 				s += x
