@@ -69,5 +69,7 @@
 	verbose = true
 [diff]
 	tool = meld
+[safe]
+	directory = *
 
 # vim: ft=gitconfig
