@@ -1,13 +1,15 @@
 {
   "checks": {
+    "annotations.misc": false,
     "cursing.filth": false,
-    "typography.diacritical_marks": false,
+    "dates_times.am_pm": false,
     "misc.but": false,
     "misc.chatspeak": false,
-    "typography.exclamation": false,
-    "typography.symbols": false,
     "misc.phrasal_adjectives": false,
-    "dates_times.am_pm": false
+    "misc.preferred_forms": false,
+    "typography.diacritical_marks": false,
+    "typography.exclamation": false,
+    "typography.symbols": false
   },
   "max_errors": 100
 }
