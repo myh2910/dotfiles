@@ -142,11 +142,11 @@ HEADER_Y_SECOND = NUM_ROWS + 1
 
 
 def offset(x):
-	return 333 * x + 23
+	return 300 * x + 23
 
 
 def offset_indented(x):
-	return 333 * x + 73
+	return 300 * x + 69
 
 
 def goto_offset(x):
