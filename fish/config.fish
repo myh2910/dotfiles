@@ -150,6 +150,7 @@ alias dropcli='dropbox-cli'
 alias getclip="xsel --clipboard"
 alias gim="vim --cmd 'let g:nt_auto_off=1' -c Git -c only"
 alias lisp='sbcl --script'
+alias output='cat > input.txt && ./a.out && cat -n output.txt'
 alias panmkd2pdf='pandoc --from=markdown --to=pdf -V fonsize=12t -V colorlinks -V indent=true -V documentclass=amsart -V linestretch=1.5'
 alias pdb='python -m pdb -c continue'
 alias putclip="xsel --clipboard"
