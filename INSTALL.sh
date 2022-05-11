@@ -24,11 +24,7 @@ if ! test -f "$HOME/.pdbrc.py"; then ln -s $HOME/dotfiles/pdbrc.py $HOME/.pdbrc.
 if ! test -f "$HOME/.screenrc"; then ln -s $HOME/dotfiles/screenrc $HOME/.screenrc; fi
 if ! test -f "$HOME/.taskrc"; then ln -s $HOME/dotfiles/taskrc $HOME/.taskrc; fi
 if ! test -f "$HOME/.xprofile"; then ln -s $HOME/dotfiles/xprofile $HOME/.xprofile; fi
-
-if ! test -f "$HOME/.xinitrc"; then
-	echo "[ -f $HOME/.xprofile ] && . $HOME/.xprofile" > $HOME/.xinitrc
-	echo "exec i3" > $HOME/.xinitrc
-fi
+if ! test -f "$HOME/.xinitrc"; then ln -s $HOME/dotfiles/xinitrc $HOME/.xinitrc; fi
 
 if ! test -f "$HOME/.config/picom.conf"; then
 	ln -s $HOME/dotfiles/picom.conf $HOME/.config/picom.conf;
