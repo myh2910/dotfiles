@@ -18,6 +18,7 @@ if ! test -f "$HOME/.agignore"; then ln -s $HOME/dotfiles/agignore $HOME/.agigno
 if ! test -f "$HOME/.bashrc"; then ln -s $HOME/dotfiles/bashrc $HOME/.bashrc; fi
 if ! test -f "$HOME/.chktexrc"; then ln -s $HOME/dotfiles/chktexrc $HOME/.chktexrc; fi
 if ! test -f "$HOME/.gitconfig"; then ln -s $HOME/dotfiles/gitconfig $HOME/.gitconfig; fi
+if ! test -f "$HOME/.gtkrc-2.0"; then ln -s $HOME/dotfiles/gtkrc-2.0 $HOME/.gtkrc-2.0; fi
 if ! test -f "$HOME/.gvimrc"; then ln -s $HOME/dotfiles/gvimrc $HOME/.gvimrc; fi
 if ! test -f "$HOME/.latexmkrc"; then ln -s $HOME/dotfiles/latexmkrc $HOME/.latexmkrc; fi
 if ! test -f "$HOME/.pdbrc.py"; then ln -s $HOME/dotfiles/pdbrc.py $HOME/.pdbrc.py; fi
@@ -63,6 +64,10 @@ fi
 if ! test -f "$HOME/.config/gh/config.yml"; then
 	mkdir -p $HOME/.config/gh
 	ln -s $HOME/dotfiles/gh-config.yml $HOME/.config/gh/config.yml
+fi
+if ! test -d "$HOME/.config/redshift"; then
+	mkdir -p $HOME/.config/redshift
+	ln -s $HOME/dotfiles/redshift.conf $HOME/.config/redshift/redshift.conf
 fi
 if ! test -d "$HOME/.config/fontconfig"; then
 	mkdir -p $HOME/.config/fontconfig
