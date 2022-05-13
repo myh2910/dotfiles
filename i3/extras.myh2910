@@ -1,6 +1,6 @@
 # Take screenshots
-bindsym --release $mod+shift+s exec import -density 500 ~/assets/$(date +"%Y%m%d-%H%M%S-%2N").png
-bindsym --release Print exec import -window root -density 500 ~/assets/$(date +"%Y%m%d-%H%M%S-%2N").png
+bindsym --release $mod+shift+s exec flameshot gui -p ~/Downloads
+bindsym --release Print exec flameshot full -p ~/Downloads
 
 # Enable floating
 for_window [window_role="pop-up"] floating enable
