@@ -6,7 +6,7 @@
 # where it can be consumed by e.g. conky
 if command -v gcalendar > /dev/null
 then
-	gcalendar --no-of-days 14 --output json > ~/.cache/agenda.json
+	~/dotfiles/sh-scripts/get-cal.sh
 fi
 
 ## SYNC TASKWARRIOR
@@ -15,7 +15,7 @@ then
 	task rc.gc=on sync
 fi
 # bugwarrior-pull
-# task sync
+task sync
 
 ## PACMAN SNAPSHOTS
 if [ -f /bin/pacman ]; then

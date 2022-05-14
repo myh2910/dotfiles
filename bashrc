@@ -24,13 +24,13 @@ export EDITOR='vim'
 export TERM='xterm-256color'
 export GPG_TTY=$(tty)
 if [ -d $HOME/.texmf ]; then
-   	export TEXMFHOME=$HOME/.texmf
+	export TEXMFHOME=$HOME/.texmf
 fi
 if [ -d $HOME/.sage ]; then
-   	export DOT_SAGENB=$HOME/.sage
+	export DOT_SAGENB=$HOME/.sage
 fi
 if [ -f /usr/bin/zathura ]; then
-   	export PDFVIEWER='zathura'
+	export PDFVIEWER='zathura'
 fi
 
 umask 007 # set umask
@@ -67,7 +67,7 @@ function rot13 () {
 		cat $1 | tr '[N-ZA-Mn-za-m5-90-4]' '[A-Za-z0-9]';
 	else
 		echo $* | tr '[N-ZA-Mn-za-m5-90-4]' '[A-Za-z0-9]';
-   	fi
+	fi
 }
 # Uses the locate utility to find a certain file
 function hunt () {
