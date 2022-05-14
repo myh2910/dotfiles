@@ -282,7 +282,7 @@ mode "exec" {
 	bindsym z exec zoom &, mode "default"
 	bindsym space exec loginctl lock-session, mode "default"
 
-	# Open lastest chapter of diary
+	# Open latest chapter of diary
 	bindsym x exec gvim -O ~/Sync/alONE/$(ag include ~/Sync/alONE/alONE.tex | tail -n 1 | cut -d \{ -f 2 | sed s/\}/.tex/), mode "default"
 
 	bindsym Return mode "default"
