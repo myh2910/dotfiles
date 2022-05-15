@@ -73,10 +73,6 @@ if ! test -d "$HOME/.config/fontconfig"; then
 	mkdir -p $HOME/.config/fontconfig
 	ln -s $HOME/dotfiles/fonts.conf $HOME/.config/fontconfig/fonts.conf
 fi
-if ! test -d "$HOME/.config/smplayer"; then
-	mkdir -p $HOME/.config/smplayer
-	ln -s $HOME/dotfiles/smplayer.ini $HOME/.config/smplayer/smplayer.ini
-fi
 if ! test -d "$HOME/.config/qt5ct"; then
 	mkdir -p $HOME/.config/qt5ct
 	ln -s $HOME/dotfiles/qt5ct.conf $HOME/.config/qt5ct/qt5ct.conf
