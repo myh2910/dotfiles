@@ -47,22 +47,22 @@ if pacman -Q --quiet i3lock-color; then
 		--keyhl-color=dd888899         \
 		--bshl-color=dd888899          \
 		--keylayout 2                  \
-		--radius 180                   \
+		--radius 200                   \
 		--ring-width 20                \
 		--date-str="%Y년 %m윌 %d일 %A" \
-		--time-size=35                 \
-		--date-size=24                 \
-		--layout-size=30               \
+		--time-size=38                 \
+		--date-size=25                 \
+		--layout-size=25               \
 		--verif-size=35                \
 		--wrong-size=35                \
-		--modif-size=32                \
+		--modif-size=35                \
 		--time-str="%p %I:%M:%S %Z"    \
-		--date-pos="ix:iy-0.22*r"      \
+		--date-pos="ix:iy-0.28*r"      \
 		--wrong-pos="ix:iy-0.1*r"      \
 		--verif-pos="ix:iy-0.1*r"      \
 		--modif-pos="ix:iy+0.1*r"      \
-		--time-pos="ix:iy+0.1*r"       \
-		--layout-pos="ix:iy+0.5*r"     \
+		--time-pos="ix:iy+0.08*r"      \
+		--layout-pos="ix:iy+0.38*r"    \
 		--color 111117dd               \
 		--show-failed-attempts         \
 		--ignore-empty-password        \
