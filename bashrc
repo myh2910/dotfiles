@@ -20,19 +20,6 @@ fi
 export SUDO_PS1='\[\033[0;31m\]${debian_chroot:+($debian_chroot)}\u@\h \[\033[1;37m\]\w\n\[\033[0m\]\$ '
 
 # Exports
-export EDITOR='vim'
-export TERM='xterm-256color'
-export GPG_TTY=$(tty)
-if [ -d $HOME/.texmf ]; then
-	export TEXMFHOME=$HOME/.texmf
-fi
-if [ -d $HOME/.sage ]; then
-	export DOT_SAGENB=$HOME/.sage
-fi
-if [ -f /usr/bin/zathura ]; then
-	export PDFVIEWER='zathura'
-fi
-
 umask 007 # set umask
 
 # Aliases
@@ -58,7 +45,6 @@ alias wpmd='python3 ~/dotfiles/py-scripts/markdown2wp.py'
 
 alias sudo='sudo ' # allows my aliases to get into sudo in bash
 
-export PYTHONPATH="$PYTHONPATH:$HOME:$HOME/dotfiles/py-scripts"
 export PATH=$PATH:$HOME/.local/bin
 
 # Various functions

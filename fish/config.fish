@@ -105,23 +105,11 @@ end
 
 # Exports
 export SHELL='/usr/bin/fish'
-export EDITOR='vim'
-export TERM='xterm-256color'
-export GPG_TTY=(tty)
 
 # the auto prompt-edited detetction is not enabled somehow
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 set -U -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
-if [ -d $HOME/.texmf ]
-		export TEXMFHOME=$HOME/.texmf
-end
-if [ -d $HOME/.sage ]
-		export DOT_SAGENB=$HOME/.sage
-end
-if [ -f /usr/bin/zathura ]
-		export PDFVIEWER='zathura'
-end
 if [ -f ~/dotfiles/aws-hmmt ]
 		source ~/dotfiles/aws-hmmt
 end
@@ -177,8 +165,6 @@ alias wah='/usr/bin/python3 ~/dotfiles/py-scripts/wah.py'
 alias wplatex='/usr/bin/python2 ~/dotfiles/py-scripts/latex2wp.py'
 alias wpmd='/usr/bin/python3 ~/dotfiles/py-scripts/markdown2wp.py'
 alias xfer='/usr/bin/python3 -m xfer'
-
-export PYTHONPATH="$PYTHONPATH:$HOME:$HOME/dotfiles/py-scripts/"
 
 # Create a new TeX file
 function newtex

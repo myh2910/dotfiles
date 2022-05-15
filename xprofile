@@ -6,7 +6,7 @@ numlockx on
 
 export LANG="en_US.UTF-8"
 
-# for foreign language input
+# For foreign language input
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
@@ -19,6 +19,22 @@ export SHELL='/usr/bin/fish'
 
 # For OBS
 export QT_QPA_PLATFORMTHEME='qt5ct'
+
+# For bash and fish
+export EDITOR='vim'
+export TERM='xterm-256color'
+export GPG_TTY=$(tty)
+export PYTHONPATH="$PYTHONPATH:$HOME:$HOME/dotfiles/py-scripts"
+
+if [ -d $HOME/.texmf ]; then
+	export TEXMFHOME=$HOME/.texmf
+fi
+if [ -d $HOME/.sage ]; then
+	export DOT_SAGENB=$HOME/.sage
+fi
+if [ -f /usr/bin/zathura ]; then
+	export PDFVIEWER='zathura'
+fi
 
 source ~/dotfiles/sh-scripts/xrandr.sh
 
