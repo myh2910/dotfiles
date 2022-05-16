@@ -45,8 +45,6 @@ alias wpmd='python3 ~/dotfiles/py-scripts/markdown2wp.py'
 
 alias sudo='sudo ' # allows my aliases to get into sudo in bash
 
-export PATH=$PATH:$HOME/.local/bin
-
 # Various functions
 function rot13 () {
 	if [ -r $1 ]; then
