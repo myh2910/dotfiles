@@ -1,6 +1,6 @@
 # Take screenshots
-bindsym --release $mod+shift+s exec flameshot gui -p ~/Pictures
-bindsym --release Print exec flameshot full -p ~/Pictures
+bindsym --release $mod+shift+s exec flameshot gui
+bindsym --release Print exec flameshot full
 
 # Enable floating
 for_window [window_role="pop-up"] floating enable
