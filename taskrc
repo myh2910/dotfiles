@@ -2,7 +2,7 @@ taskd.certificate=~/.intheam/private.certificate.pem
 taskd.key=~/.intheam/private.key.pem
 taskd.ca=~/.intheam/ca.cert.pem
 taskd.server=inthe.am:53589
-taskd.credentials=inthe_am/minleeyohan/f4a3f58b-27ee-43c5-bab1-d667bcd4bc5a
+taskd.credentials=inthe_am/minleeyohan/a649be98-0133-41da-8889-d7c13568f75a
 taskd.trust=strict
 
 alias.E=project:errand

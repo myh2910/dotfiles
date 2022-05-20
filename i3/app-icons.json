@@ -28,7 +28,7 @@
     "terminal - ranger": "folder",
     "thunar": "folder-open",
     "gvim": "pen-to-square",
-    "vlc": "circle-play",
+    "smplayer": "circle-play",
     ".*WhatsApp (—|-) Mozilla Firefox$" : "whatsapp",
     "xfce4-terminal": "terminal",
     ".*YouTube (—|-) Mozilla Firefox$" : "youtube",
