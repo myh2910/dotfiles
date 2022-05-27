@@ -154,6 +154,7 @@ alias wut='watch -b -c -n 10 "python manage.py test"'
 alias pip='pip3'
 alias pudb='pudb3'
 
+alias cforces='/usr/bin/python3 ~/dotfiles/cforces/main.py'
 alias demacro='/usr/bin/python2 ~/dotfiles/py-scripts/demacro.py'
 alias md='/usr/bin/python3 ~/dotfiles/py-scripts/sane_markdown.py'
 alias odus='/usr/bin/python3 ~/dotfiles/py-scripts/odus.py'

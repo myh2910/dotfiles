@@ -1,3 +1,6 @@
 [submodule "i3/3kon"]
 	path = i3/3kon
 	url = https://github.com/myh2910/i3-workspace-names-daemon
+[submodule "cforces"]
+	path = cforces
+	url = https://github.com/myh2910/cforces
