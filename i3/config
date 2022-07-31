@@ -211,15 +211,17 @@ mode "config" {
 
 	bindsym z exec --no-startup-id xrandr \
 		--output "eDP1" --primary \
-		--output "HDMI1" --right-of "eDP1"
+		--output "HDMI1" --auto --right-of "eDP1" \
+		&& test -f ~/.fehbg && sh ~/.fehbg
 
 	bindsym x exec --no-startup-id xrandr \
-		--output "HDMI1" --primary \
-		--output "eDP1" --left-of "HDMI1"
+		--output "HDMI1" --auto --primary \
+		--output "eDP1" --left-of "HDMI1" \
+		&& test -f ~/.fehbg && sh ~/.fehbg
 
 	bindsym c exec --no-startup-id xrandr \
 		--output "eDP1" --auto \
-		--output "HDMI1" --same-as "eDP1"
+		--output "HDMI1" --auto --same-as "eDP1"
 
 	# back to normal: Enter or Escape
 	bindsym Return mode "default"
@@ -267,18 +269,20 @@ bindsym $mod+x mode "exec"
 mode "exec" {
 	bindsym a exec i3-sensible-terminal -e \
 		"python $HOME/dotfiles/py-scripts/export-ggb-clean-asy.py", mode "default"
-	bindsym b exec libreoffice --calc &, mode "default"
-	bindsym d exec discord &, mode "default"
+	bindsym b exec bleachbit &, mode "default"
+	bindsym c exec google-chrome-stable &, mode "default"
 	bindsym f exec firefox -p &, mode "default"
 	bindsym g exec geogebra &, mode "default"
-	bindsym h exec google-chrome &, mode "default"
 	bindsym i exec ibus-daemon -d -r, mode "default"
 	bindsym m exec gnucash &, mode "default"
 	bindsym o exec obs &, mode "default"
-	bindsym p exec python "$HOME/dotfiles/py-scripts/projtext.py" &, mode "default"
+	bindsym p exec libreoffice --impress &, mode "default"
+	bindsym q exec copyq &, mode "default"
+	bindsym s exec flameshot &, mode "default"
 	bindsym t exec thunar &, mode "default"
 	bindsym v exec gvim &, mode "default"
-	bindsym y exec dynalist &, mode "default"
+	bindsym w exec libreoffice --writer &, mode "default"
+	bindsym x exec libreoffice --calc &, mode "default"
 	bindsym z exec zoom &, mode "default"
 	bindsym space exec loginctl lock-session, mode "default"
 
