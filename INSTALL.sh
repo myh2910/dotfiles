@@ -31,6 +31,10 @@ if ! test -f "$HOME/.config/picom.conf"; then
 	ln -s $HOME/dotfiles/picom.conf $HOME/.config/picom.conf;
 fi
 
+if ! test -f "$HOME/.config/chrome-flags.conf"; then
+	ln -s $HOME/dotfiles/chrome-flags.conf $HOME/.config/chrome-flags.conf;
+fi
+
 # file/dir in .config
 mkdir -p .config
 if ! test -d "$HOME/.config/bat"; then ln -s $HOME/dotfiles/bat $HOME/.config/bat; fi
