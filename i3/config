@@ -333,7 +333,7 @@ exec --no-startup-id dex -ae i3 &
 exec --no-startup-id $HOME/dotfiles/sh-scripts/startup.sh &
 # vvv workspace setup
 # NOTE: requires i3ipc installed via pip to run
-exec_always --no-startup-id exec $HOME/dotfiles/i3/3kon/i3_workspace_names_daemon.py -n -d " " -l 12
+exec_always --no-startup-id exec python $HOME/dotfiles/i3/3kon/i3_workspace_names_daemon.py -n -s "{}: <span font='Font Awesome 6 Free,Font Awesome 6 Brands'>{}</span>" -d " " -l 12
 
 # Commands {{{
 bindsym $mod+i exec "xfce4-terminal --geometry 120x32 --command ~/dotfiles/sh-scripts/vit-wrapper.sh --title=VIMTODO", mode "default"

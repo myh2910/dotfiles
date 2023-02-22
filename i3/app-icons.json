@@ -22,6 +22,7 @@
     ".*.pdf (—|-) Mozilla Firefox$": "file-pdf",
     "ristretto": "image",
     "signal": "comment",
+    "steam": "steam",
     "terminal - .* - VIM": "code",
     "terminal - latexmk": "draft2digital",
     "terminal - latexmk": "draft2digital",
